@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Image from "next/image";
 import React, { useState } from "react";
 import { FaArrowRight, FaChartLine, FaRegLifeRing, FaArrowLeft } from "react-icons/fa6";
 import { FaUserGroup } from "react-icons/fa6";
@@ -32,17 +33,17 @@ const About = () => {
     {
       icon: <FaUserGroup size={30} className="text-white" />,
       title: "Web Development",
-      description: "Let us know how we can help! Get in touch and we’ll give you a fresh perspective on your business",
+      description: "Let us know how we can help! Get in touch and we'll give you a fresh perspective on your business",
     },
     {
       icon: <FaChartLine size={30} className="text-white" />,
       title: "Mobile Apps",
-      description: "We’re here to help you succeed. Our team of experts is dedicated to providing you with the best possible service and support.",
+      description: "We're here to help you succeed. Our team of experts is dedicated to providing you with the best possible service and support.",
     },
     {
       icon: <FaRegLifeRing size={30} className="text-white" />,
       title: "UI/UX Design",
-      description: "We’re here to help you succeed. Our team of experts is dedicated to providing you with the best possible service and support.",
+      description: "We're here to help you succeed. Our team of experts is dedicated to providing you with the best possible service and support.",
     },
   ];
 
@@ -119,7 +120,9 @@ const About = () => {
       <Banner title={bannerData.title} description={bannerData.description} />
 
       <div className="py-[50px] px-[150px] flex items-center justify-between gap-5">
-        <img src="/images/about.jpg" alt="about" className="w-[50%] rounded-[50px]" />
+        <div className="relative w-[50%] h-[400px]">
+          <Image src="/images/about.jpg" alt="about" fill className="object-cover rounded-[50px]" />
+        </div>
         <div className="flex flex-col gap-[40px] w-[50%]">
           <h1 className="text-[24px] font-bold">{aboutContent.title}</h1>
           <p className="text-[16px]">{aboutContent.description}</p>
@@ -168,8 +171,17 @@ const About = () => {
       <div className="py-[100px] px-[150px]">
         {alternatingContent.map((item, index) => (
           <div key={index} className={`flex items-center gap-12 mb-20 ${index % 2 === 1 ? "flex-row-reverse" : ""}`}>
-            <div className="w-1/2 flex items-center justify-center">
-              <img src={item.image} alt={item.title} className="w-[300px] h-[300px] object-cover" />
+            <div className="w-1/2 relative">
+              <div className="aspect-[4/3] relative w-[300px] h-[225px]">
+                <Image 
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="300px"
+                  className="object-cover rounded-[20px]"
+                  priority={index === 0}
+                />
+              </div>
             </div>
             <div className="w-1/2 bg-[#ececec] border-2 border-gray-300 rounded-[20px] p-[30px]">
               <h2 className="text-[32px] font-bold mb-6">{item.title}</h2>
@@ -206,8 +218,8 @@ const About = () => {
         </div>
 
         <div className="flex flex-col items-center gap-12">
-          <div className="w-full flex justify-center">
-            <img src="/images/corpo.jpg" alt="Partnership" className="w-[800px] h-[400px] rounded-[20px] object-cover" />
+          <div className="w-full flex justify-center relative h-[400px]">
+            <Image src="/images/corpo.jpg" alt="Partnership" fill className="object-cover rounded-[20px]" />
           </div>
           <div className="w-full max-w-[800px]">
             <div className="transition-all duration-500 ease-in-out">

@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import gsap from "gsap";
@@ -30,7 +31,7 @@ const Header = () => {
     { name: "Blog", path: "/blog" },
   ];
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
 
     if (currentScrollY > lastScrollY) {
@@ -42,12 +43,12 @@ const Header = () => {
     }
 
     setLastScrollY(currentScrollY);
-  };
+  }, [lastScrollY]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, [handleScroll]);
 
   const handleMouseEnter = (e) => {
     const underline = e.currentTarget.querySelector(".nav-underline");
@@ -135,7 +136,9 @@ const Header = () => {
        transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       <Link href="/" className="flex items-end relative" onClick={handleMenuItemClick}>
-        <img src="/images/logo-white.png" alt="logo" className="w-[50px]" />
+        <div className="relative w-[50px] h-[50px]">
+          <Image src="/images/logo-white.png" alt="logo" fill className="object-contain" priority />
+        </div>
         <div>
           <h1 className="text-[24px] absolute left-[52px] bottom-[15px]">techEdge</h1>
           <h1 className="text-[16px] absolute left-[90px] bottom-[-2px] font-thin">Solutions.</h1>

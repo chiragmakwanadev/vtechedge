@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Image from "next/image";
 import React from "react";
 
 const RPA = () => {
@@ -20,8 +21,8 @@ const RPA = () => {
           <button className="bg-[#415A77] text-white font-semibold py-3 px-8 rounded-lg transition">Discover</button>
         </div>
         {/* Right Side */}
-        <div className="flex-1 flex justify-center">
-          <img src="/images/bg-3.jpg" alt="RPA Illustration" className="w-[700px] h-[400px] object-cover rounded-[20px]" />
+        <div className="flex-1 flex justify-center relative h-[400px]">
+          <Image src="/images/bg-3.jpg" alt="RPA Illustration" fill className="object-cover rounded-[20px]" />
         </div>
       </div>
 
@@ -31,7 +32,9 @@ const RPA = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Card 1 */}
           <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-start transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <img src="/images/logo.png" alt="Benefit 1" className="w-12 h-12 mb-4" />
+            <div className="relative w-12 h-12 mb-4">
+              <Image src="/images/logo.png" alt="Benefit 1" fill className="object-contain" />
+            </div>
             <h3 className="text-xl font-semibold mb-2">Efficiency</h3>
             <p className="text-gray-600 mb-6">Automate repetitive tasks and boost productivity across your organization.</p>
             <span className="flex items-center text-[#415A77] font-semibold cursor-pointer hover:underline">
@@ -43,7 +46,9 @@ const RPA = () => {
           </div>
           {/* Card 2 */}
           <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-start transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <img src="/images/logo-black.png" alt="Benefit 2" className="w-12 h-12 mb-4" />
+            <div className="relative w-12 h-12 mb-4">
+              <Image src="/images/logo-black.png" alt="Benefit 2" fill className="object-contain" />
+            </div>
             <h3 className="text-xl font-semibold mb-2">Accuracy</h3>
             <p className="text-gray-600 mb-6">Reduce human error and ensure consistent, reliable results every time.</p>
             <span className="flex items-center text-[#415A77] font-semibold cursor-pointer hover:underline">
@@ -55,7 +60,9 @@ const RPA = () => {
           </div>
           {/* Card 3 */}
           <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-start transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <img src="/images/logo.png" alt="Benefit 3" className="w-12 h-12 mb-4" />
+            <div className="relative w-12 h-12 mb-4">
+              <Image src="/images/logo.png" alt="Benefit 3" fill className="object-contain" />
+            </div>
             <h3 className="text-xl font-semibold mb-2">Scalability</h3>
             <p className="text-gray-600 mb-6">Easily scale automation solutions as your business grows and evolves.</p>
             <span className="flex items-center text-[#415A77] font-semibold cursor-pointer hover:underline">
@@ -67,7 +74,9 @@ const RPA = () => {
           </div>
           {/* Card 4 */}
           <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-start transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <img src="/images/logo.png" alt="Benefit 4" className="w-12 h-12 mb-4" />
+            <div className="relative w-12 h-12 mb-4">
+              <Image src="/images/logo.png" alt="Benefit 4" fill className="object-contain" />
+            </div>
             <h3 className="text-xl font-semibold mb-2">Cost Savings</h3>
             <p className="text-gray-600 mb-6">Lower operational costs by automating manual, time-consuming processes.</p>
             <span className="flex items-center text-[#415A77] font-semibold cursor-pointer hover:underline">
@@ -92,14 +101,14 @@ const RPA = () => {
               accelerates business cycles for finance teams.
             </p>
           </div>
-          <div className="flex-1 flex justify-start">
-            <img src="/images/bg-1.jpg" alt="Finance Automation" className="w-[600px] h-[300px] object-cover rounded-[20px]" />
+          <div className="flex-1 flex justify-start relative h-[300px]">
+            <Image src="/images/bg-1.jpg" alt="Finance Automation" fill className="object-cover rounded-[20px]" />
           </div>
         </div>
         {/* Second Row: Left image, right content */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="flex-1 flex justify-start order-2 md:order-1">
-            <img src="/images/bg-2.jpg" alt="HR Automation" className="w-[600px] h-[300px] object-cover rounded-[20px]" />
+          <div className="flex-1 flex justify-start order-2 md:order-1 relative h-[300px]">
+            <Image src="/images/bg-2.jpg" alt="HR Automation" fill className="object-cover rounded-[20px]" />
           </div>
           <div className="flex-1 flex flex-col items-start order-1 md:order-2 mb-8 md:mb-0">
             <h3 className="text-2xl md:text-3xl font-bold mb-6">Enhancing HR Operations</h3>
@@ -120,7 +129,9 @@ const RPA = () => {
       <div className="relative w-full py-16 my-14">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img src="/images/banner.jpg" alt="Background" className="w-full h-full object-cover" />
+          <div className="relative w-full h-full">
+            <Image src="/images/banner.jpg" alt="Background" fill className="object-cover" />
+          </div>
           <div className="absolute inset-0 bg-black opacity-70"></div>
         </div>
 
@@ -145,11 +156,11 @@ const RPA = () => {
       <div className="py-[50px] px-[150px] bg-white">
         <h2 className="text-3xl font-bold mb-4 text-center">Brands Who Trust Us</h2>
         <div className="flex flex-wrap justify-between items-center">
-          <img src="/images/logo.png" alt="Trusted Brand 1" className="w-32 h-32 object-contain opacity-80 hover:opacity-100 transition-opacity" />
-          <img src="/images/logo.png" alt="Trusted Brand 2" className="w-32 h-32 object-contain opacity-80 hover:opacity-100 transition-opacity" />
-          <img src="/images/logo.png" alt="Trusted Brand 3" className="w-32 h-32 object-contain opacity-80 hover:opacity-100 transition-opacity" />
-          <img src="/images/logo.png" alt="Trusted Brand 4" className="w-32 h-32 object-contain opacity-80 hover:opacity-100 transition-opacity" />
-          <img src="/images/logo.png" alt="Trusted Brand 5" className="w-32 h-32 object-contain opacity-80 hover:opacity-100 transition-opacity" />
+          {[1, 2, 3, 4, 5].map((index) => (
+            <div key={index} className="relative w-32 h-32">
+              <Image src="/images/logo.png" alt={`Trusted Brand ${index}`} fill className="object-contain opacity-80 hover:opacity-100 transition-opacity" />
+            </div>
+          ))}
         </div>
       </div>
 
