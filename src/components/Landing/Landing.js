@@ -12,16 +12,25 @@ const Landing = () => {
 
   const slideContent = [
     {
-      title: "Welcome to TechEdge",
-      description: "Discover the future of technology with our cutting-edge solutions and innovative approaches to digital transformation.",
+      title: "Accelerate Your Digital Transformation",
+      subTitle: " Future-Ready Software & IT Solutions for Scalable Growth.",
+      description:
+        " VTechEdge empowers businesses with custom software development, AI, and automation tools that modernize workflows and enhance operational efficiency.",
+      cta: "Get a Free Consultation ",
     },
     {
-      title: "Innovation at Scale",
-      description: "Experience seamless integration and powerful performance with our enterprise-grade technology solutions.",
+      title: "Specialists in Healthcare & Pharma IT Solutions",
+      subTitle: "Compliance-Focused Technology Built for Critical Industries",
+      description:
+        "We deliver end-to-end tech infrastructure, regulatory software, and digital transformation services for clinics, labs, pharmacies, and life sciences brands.",
+      cta: "Discover Our Healthcare Solutions",
     },
     {
-      title: "Transform Your Business",
-      description: "Leverage our expertise to drive growth and stay ahead in the rapidly evolving digital landscape.",
+      title: "Your Tech Partner from Idea to Execution",
+      subTitle: "Custom Software. Cloud Solutions. Seamless Integration.",
+      description:
+        "From startups to enterprises, VTechEdge offers full-cycle development services — from strategy and UI/UX to backend, cloud, AI, and managed IT.",
+      cta: "Start Your Project Today",
     },
   ];
 
@@ -73,8 +82,14 @@ const Landing = () => {
     });
   }, []);
 
-  const nextSlide = useCallback(() => goToSlide(currentSlide + 1), [currentSlide, goToSlide]);
-  const prevSlide = useCallback(() => goToSlide(currentSlide - 1), [currentSlide, goToSlide]);
+  const nextSlide = useCallback(
+    () => goToSlide(currentSlide + 1),
+    [currentSlide, goToSlide]
+  );
+  const prevSlide = useCallback(
+    () => goToSlide(currentSlide - 1),
+    [currentSlide, goToSlide]
+  );
 
   // Auto-play functionality
   useEffect(() => {
@@ -87,8 +102,19 @@ const Landing = () => {
       {/* Slides Container */}
       <div className="relative w-full h-full">
         {images.map((image, index) => (
-          <div key={index} ref={(el) => (slidesRef.current[index] = el)} className="absolute top-0 left-0 w-full h-full" style={{ opacity: index === 0 ? 1 : 0 }}>
-            <Image src={image} alt={`Slide ${index + 1}`} fill className="object-cover brightness-[0.3] rounded-b-[50px]" priority={index === 0} />
+          <div
+            key={index}
+            ref={(el) => (slidesRef.current[index] = el)}
+            className="absolute top-0 left-0 w-full h-full"
+            style={{ opacity: index === 0 ? 1 : 0 }}
+          >
+            <Image
+              src={image}
+              alt={`Slide ${index + 1}`}
+              fill
+              className="object-cover brightness-[0.3] rounded-b-[50px]"
+              priority={index === 0}
+            />
           </div>
         ))}
       </div>
@@ -98,12 +124,15 @@ const Landing = () => {
         <div
           key={index}
           ref={(el) => (textRefs.current[index] = el)}
-          className="absolute left-[100px] top-1/2 -translate-y-1/2 text-left text-[#e0e1dd] z-10 w-full max-w-2xl"
+          className="absolute left-[100px] top-1/2 -translate-y-1/2 text-left text-[#e0e1dd] z-10 w-full max-w-5xl"
           style={{ opacity: index === 0 ? 1 : 0 }}
         >
-          <h2 className="text-[60px] md:text-6xl font-medium mb-6">{content.title}</h2>
-          <p className="text-[24px] max-w-xl w-[60%]">{content.description}</p>
-          <button className="bg-[#415a77] px-[20px] py-[10px] mt-[30px] rounded-[8px] text-[18px]">Learn More</button>
+          <h3 className="text-[30px] font-light mb-2">{content.title}</h3>
+          <h1 className="text-[40px] mb-4">{content.subTitle}</h1>
+          <p className="text-[16px] max-w-xl w-[80%]">{content.description}</p>
+          <button className="bg-[#1b263b] hover:bg-[#415a77] transition-colors duration-300 text-white px-[20px] py-[10px] rounded-[8px] text-[18px] mt-[30px]">
+            {content.cta}
+          </button>
         </div>
       ))}
     </div>
