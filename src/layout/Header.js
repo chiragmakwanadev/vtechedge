@@ -15,12 +15,13 @@ const Header = () => {
   const dropdownRef = useRef(null);
 
   const serviceItems = [
-    { name: "Software Development", slug: "software-development" },
-    { name: "Cloud Solutions", slug: "cloud-solutions" },
-    { name: "Digital Transformation", slug: "digital-transformation" },
-    { name: "IT Consulting", slug: "it-consulting" },
-    { name: "Cybersecurity", slug: "cybersecurity" },
-    { name: "Data Analytics", slug: "data-analytics" },
+    { name: "Enterprise Software Development", slug: "enterprise-software-development" },
+    { name: "Custom Web Application Development", slug: "custom-web-application-development" },
+    { name: "Mobile App Development", slug: "mobile-app-development" },
+    { name: "Business Intelligence and Process Automation", slug: "business-intelligence-and-process-automation" },
+    { name: "AI Software Development", slug: "ai-software-development" },
+    { name: "Graphic Design", slug: "graphic-design" },
+    { name: "Digital Marketing", slug: "digital-marketing" },
   ];
 
   const navItems = [

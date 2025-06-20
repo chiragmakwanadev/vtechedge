@@ -1,305 +1,348 @@
 export const serviceData = {
-  "software-development": {
-    title: "Software Development",
-    description: "Custom software solutions tailored to your business needs, built with the latest technologies and best practices.",
+  "enterprise-software-development": {
+    title: "Enterprise Software Development",
+    description: "Unlock Scalable, Secure, and Smart Business Solutions",
     content: [
       {
-        heading: "Why Choose Our Software Development Services?",
+        heading: "Transforming Businesses with Scalable & Intelligent Software Solutions",
         paragraphs: [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+          "At VTechEdge, we specialize in Enterprise Software Development designed to empower businesses with scalable, secure, and future-ready digital solutions. Whether you're modernizing legacy systems, integrating enterprise applications, or building custom software from the ground up, our expert development team delivers robust solutions tailored to your unique business goals. In today's fast-evolving digital landscape, organizations need more than just off-the-shelf software. Our enterprise software services are built to streamline operations, increase productivity, and drive digital transformation—all while ensuring seamless integration across your technology stack. From consulting to development, deployment, and continuous optimization, we support businesses at every stage of the software lifecycle. Our approach is agile, collaborative, and deeply rooted in industry best practices, ensuring every solution we build is high-performing, adaptable, and aligned with your strategic vision. Partner with VTechEdge to transform your enterprise with intelligent software solutions that create measurable impact and long-term value.",
         ],
       },
     ],
     mobileCards: {
-      heading: "End-to-End Software Development Solutions",
+      heading: "Our Enterprise Software Solutions",
       cards: [
         {
           icon: "💻",
-          title: "Custom Development",
-          description: "Tailored software solutions designed to meet your specific business requirements and challenges.",
+          title: "Custom Application Development",
+          description: "We build secure, scalable, and fully tailored software solutions—from ERP to CRM—designed around your business needs and goals",
         },
         {
           icon: "🔄",
-          title: "Agile Methodology",
-          description: "Flexible development approach ensuring rapid delivery and continuous improvement.",
+          title: "Legacy System Modernization",
+          description: "Upgrade outdated systems with cloud migration, UX enhancements, and improved performance—all with minimal disruption to your operations.",
         },
         {
           icon: "🔧",
-          title: "Maintenance & Support",
-          description: "Ongoing technical support and maintenance to keep your software running smoothly.",
+          title: "System Integration & Automation",
+          description: "Connect and automate your enterprise systems for seamless workflows, real-time data, and better decision-making across departments.",
         },
       ],
     },
     featureSection: {
-      heading: "Our Software Development Approach",
+      heading: "Our Enterprise Software Development Approach",
       image: "/images/bg-1.jpg",
       features: [
         {
-          title: "Discovery & Planning",
+          title: "Consult & Strategize",
           description:
-            "We start by understanding your business needs and defining a clear project roadmap.start by understanding your business needs and defining a clear project roadmap.start by understanding your business needs and defining a clear project roadmap.",
+            "We begin by understanding your business goals, challenges, and technology landscape. Through in-depth consultation and analysis, we craft a clear software strategy aligned with your enterprise objectives.",
         },
         {
-          title: "Agile Development",
+          title: "Design & Develop",
           description:
-            "Our team uses agile methodologies to deliver high-quality software in iterative cycles.Our team uses agile methodologies to deliver high-quality software in iterative cycles.Our team uses agile methodologies to deliver high-quality software in iterative cycles.",
+            "Our agile development process focuses on building secure, scalable, and user-centric solutions. We prioritize performance, integration, and adaptability to ensure your software evolves with your business.",
         },
         {
-          title: "Deployment & Support",
+          title: "Deploy & Optimize",
           description:
-            "We ensure smooth deployment and provide ongoing support for your peace of mind.We ensure smooth deployment and provide ongoing support for your peace of mind.We ensure smooth deployment and provide ongoing support for your peace of mind.",
+            "After deployment, we ensure smooth integration and provide ongoing support. With continuous monitoring and improvements, we help your enterprise software stay reliable, efficient, and future-ready.",
         },
       ],
     },
     multiPhaseSection: {
-      heading: "Multi Phase Security Considerations For Projects - Large and Small",
-      subheading:
-        "Industry trends and architectural patterns come and go, but security concerns are here to stay for businesses and end-users alike. Apexbit approaches security as a fundamental component at all stages of the software development lifecycle. We take extensive measures to apply security controls across all facets of your web project:",
+      heading: "Why Choose VTechEdge for Enterprise Software Development?",
+      subheading: "Choosing the right technology partner can make or break your digital transformation. Here’s why businesses trust VTechEdge:",
       items: [
         {
           icon: "👥", // Replace with SVG if needed
-          title: "CROSS-FUNCTIONAL TEAMS",
-          description:
-            "The project team takes full responsibility for the application from development to production and back, acting as a cross-functional business capabilities enabler across the entire app life cycle.",
+          title: "Industry Expertise",
+          description: " 10+ years of experience delivering enterprise-grade software across industries including healthcare, pharma, finance, and more.",
         },
         {
           icon: "⏩",
-          title: "ACCELERATED TIME-TO-VALUE",
-          description:
-            "Continuous delivery, app-centric approach and all-round deployment automation enable project teams to ship new apps and features as frequently as you need to move safely at the desired speed of innovation.",
+          title: "Custom-Built Solutions",
+          description: "write the Section 3 for  out Enterprise Software Solutions approach in three points ",
         },
         {
           icon: "🛠️",
-          title: "HEAVILY CUSTOMIZED PROJECTS",
-          description:
-            "We offer experience with open-ended and heavily customized projects to enable companies to establish a competitive advantage in their businesses by using software and connected devices in brand new ways.",
+          title: "Agile & Scalable Development",
+          description: " Flexible methodologies that support fast iterations, rapid deployment, and future scalability.",
         },
         {
           icon: "🏋️",
-          title: "STRONG DELIVERY WORKFLOW",
-          description:
-            "Apexbit's project teams set up, configure and manage application delivery environments and workflows with an eye for transforming your web application into a force for true agility in the marketplace.",
+          title: "Security & Compliance First",
+          description: "Enterprise-level security protocols and full compliance with industry standards like HIPAA, GDPR, and ISO.",
         },
       ],
     },
   },
-  "cloud-solutions": {
-    title: "Cloud Solutions",
-    description: "Scalable cloud infrastructure and migration services to help your business leverage the power of cloud computing.",
+  "custom-web-application-development": {
+    title: "Custom Web Application Development",
+    description: "Tailored Digital Solutions for Modern Businesses",
     content: [
       {
-        heading: "Why Choose Our Cloud Solutions?",
+        heading: "Build Smart, Scalable & Purpose-Driven Web Solutions",
         paragraphs: [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+          "At VTechEdge, we specialize in Custom Web Application Development that transforms your unique business requirements into powerful, user-friendly, and scalable digital solutions. Whether you need a customer portal, internal business tool, or a fully integrated web platform, we design and develop applications that align perfectly with your goals. Unlike off-the-shelf products, our custom web applications are built from the ground up—ensuring that every feature, workflow, and integration reflects your operational needs and brand identity. We combine strategic planning, modern UI/UX design, secure architecture, and cutting-edge technologies to create web apps that deliver performance, reliability, and long-term value. From startups to enterprises, we help organizations streamline processes, enhance user engagement, and achieve digital efficiency through bespoke web applications that scale as you grow. Partner with VTechEdge to build custom web applications that empower your business and drive digital transformation.",
         ],
       },
     ],
     mobileCards: {
-      heading: "Comprehensive Cloud Services",
+      heading: "Our Custom Web App Services",
       cards: [
         {
           icon: "☁️",
-          title: "Cloud Migration",
-          description: "Seamless transition to cloud infrastructure with minimal disruption to your business.",
+          title: "Business Web Applications",
+          description: "Streamline operations with tailored internal tools—dashboards, portals, and workflow systems built for your exact business needs.",
         },
         {
           icon: "🛡️",
-          title: "Cloud Security",
-          description: "Advanced security measures to protect your cloud infrastructure and data.",
+          title: "Customer Web Portals",
+          description: "Create fast, responsive, and user-friendly platforms for your clients—perfect for e-commerce, service portals, or booking systems.",
         },
         {
           icon: "📈",
-          title: "Cloud Optimization",
-          description: "Performance optimization and cost management for your cloud resources.",
+          title: "Progressive Web Apps (PWAs)",
+          description: "Deliver app-like experiences on the web with offline access, push notifications, and fast load times across all devices.",
         },
       ],
     },
     featureSection: {
-      heading: "Cloud Solutions Tailored for You",
+      heading: "Our Development Approach",
       image: "/images/bg-2.jpg",
       features: [
         {
-          title: "Cloud Assessment",
-          description:
-            "Evaluate your current infrastructure and readiness for cloud migration.Evaluate your current infrastructure and readiness for cloud migration.Evaluate your current infrastructure and readiness for cloud migration.",
+          title: "Discover & Plan",
+          description: "We begin with a deep dive into your business needs, user expectations, and technical goals—turning them into a clear development roadmap.",
         },
         {
-          title: "Migration & Integration",
-          description:
-            "Seamlessly move your workloads to the cloud with minimal disruption.Seamlessly move your workloads to the cloud with minimal disruption.Seamlessly move your workloads to the cloud with minimal disruption.",
+          title: "Design & Build",
+          description: "Using agile methodology, we create responsive, secure, and scalable web applications—built with clean code and modern technologies.",
         },
         {
-          title: "Optimization & Security",
+          title: "Test, Deploy & Support",
           description:
-            "Optimize cloud resources and ensure robust security for your data.Optimize cloud resources and ensure robust security for your data.Optimize cloud resources and ensure robust security for your data.",
+            "Before launch, we rigorously test your application for performance, security, and usability. Post-deployment, we provide continuous support and optimization.",
         },
       ],
     },
     multiPhaseSection: {
-      heading: "Cloud Security Best Practices",
-      subheading: "Cloud adoption brings new security challenges. We ensure your cloud journey is secure at every phase, from migration to optimization.",
+      heading: "Why Choose VTechEdge for Custom Web App Development?",
+      subheading: "Here’s why businesses choose VTechEdge to build their custom web applications:",
       items: [
-        { icon: "🔒", title: "SECURE MIGRATION", description: "We ensure your data and workloads are securely migrated to the cloud with minimal risk." },
-        { icon: "🔄", title: "CONTINUOUS MONITORING", description: "Real-time monitoring and alerts to detect and respond to threats quickly." },
-        { icon: "🛡️", title: "COMPLIANCE", description: "We help you meet industry compliance standards and regulations in the cloud." },
-        { icon: "⚡", title: "PERFORMANCE OPTIMIZATION", description: "Optimize your cloud resources for both security and performance." },
+        {
+          icon: "🔒",
+          title: "Tailored to Your Business",
+          description: "We don’t offer one-size-fits-all solutions. Every application is custom-built to match your exact workflows, goals, and user needs.",
+        },
+        {
+          icon: "📈",
+          title: "Scalable & Future-Ready",
+          description: "Our web apps are designed to grow with your business—flexible architectures that support new features, users, and integrations over time.",
+        },
+        {
+          icon: "⚡",
+          title: "Fast & Secure Development",
+          description: "We follow best practices in security, performance, and agile delivery to ensure you get a high-quality product—on time and on budget.",
+        },
+        {
+          icon: "🔄",
+          title: "Ongoing Support & Optimization",
+          description: "Beyond launch, we're here to help with updates, enhancements, and technical support to keep your application running at its best.",
+        },
       ],
     },
   },
-  "digital-transformation": {
-    title: "Digital Transformation",
-    description: "End-to-end digital transformation services to modernize your business operations and enhance customer experience.",
+  "mobile-app-development": {
+    title: "Mobile App Development Services",
+    description: "Innovative Mobile Solutions for a Connected World",
     content: [
       {
-        heading: "Why Choose Our Digital Transformation Services?",
+        heading: "Build Engaging, Scalable & Future-Ready Mobile Experiences",
         paragraphs: [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+          "At VTechEdge, we specialize in building powerful, intuitive, and high-performing mobile applications tailored to your business goals. Whether you're a startup, enterprise, or growing business, our mobile app development services help you connect with your audience, streamline operations, and unlock new revenue streams—right from the palm of their hand. We design and develop both native and cross-platform mobile apps that deliver seamless user experiences across iOS, Android, and hybrid environments. Our team combines modern design principles, scalable architecture, and agile development practices to ensure your app is not only functional—but future-proof. From idea validation and prototyping to deployment and post-launch support, we partner with you at every stage to bring your mobile vision to life. With a strong focus on user experience, security, and performance, VTechEdge delivers mobile apps that drive real business impact in today's digital-first world.",
         ],
       },
     ],
     mobileCards: {
-      heading: "Digital Transformation Solutions",
+      heading: "Our Mobile App Services",
       cards: [
         {
-          icon: "🔄",
-          title: "Process Automation",
-          description: "Streamline operations with automated workflows and digital processes.",
-        },
-        {
           icon: "📱",
-          title: "Digital Experience",
-          description: "Enhance customer engagement through modern digital channels.",
+          title: "Native App Development",
+          description: "High-performance apps built specifically for iOS and Android to deliver the best speed, usability, and platform experience.",
         },
         {
-          icon: "📊",
-          title: "Data Analytics",
-          description: "Leverage data insights to drive informed business decisions.",
+          icon: "🔄",
+          title: "Cross-Platform Development",
+          description: "Single-codebase apps using Flutter or React Native—ideal for faster launch, lower cost, and consistent performance across devices.",
+        },
+        {
+          icon: "🏢",
+          title: "Enterprise Mobile Solutions",
+          description: "Secure, scalable apps for internal business use—integrated with your systems to boost productivity and mobility.",
         },
       ],
     },
     featureSection: {
-      heading: "Transform Your Business Digitally",
+      heading: "Our Development Approach",
       image: "/images/bg-3.jpg",
       features: [
         {
-          title: "Process Automation",
-          description:
-            "Automate repetitive tasks to boost efficiency and reduce costs.Automate repetitive tasks to boost efficiency and reduce costs.Automate repetitive tasks to boost efficiency and reduce costs.",
+          title: "Discovery & Strategy",
+          description: "We start by understanding your goals, target users, and business model to define a clear mobile strategy and app roadmap.",
         },
         {
-          title: "Customer Experience",
-          description:
-            "Enhance customer engagement with digital touchpoints.Enhance customer engagement with digital touchpoints.Enhance customer engagement with digital touchpoints.",
+          title: "Design & Development",
+          description: "Our team designs intuitive interfaces and develops robust, scalable mobile apps using the latest technologies and best practices.",
         },
         {
-          title: "Change Management",
-          description:
-            "Support your team through the digital transition with expert guidance.Support your team through the digital transition with expert guidance.Support your team through the digital transition with expert guidance.",
+          title: "Testing, Launch & Support",
+          description: "We ensure smooth performance with thorough testing, assist with app store deployment, and provide ongoing support for updates and enhancements.",
         },
       ],
     },
     multiPhaseSection: {
-      heading: "Digital Transformation Security",
-      subheading: "Security is at the core of every digital transformation project. We integrate security controls at every stage to protect your business.",
+      heading: "Why Choose VTechEdge for Mobile App Development?",
+      subheading: "Your Trusted Partner for Mobile Innovation",
       items: [
-        { icon: "🔗", title: "SECURE INTEGRATION", description: "Integrate new digital tools and platforms securely into your existing environment." },
-        { icon: "🔍", title: "VISIBILITY", description: "Gain full visibility into your digital assets and their security posture." },
-        { icon: "🔧", title: "CUSTOM SOLUTIONS", description: "Tailored security solutions for your unique digital transformation journey." },
-        { icon: "🚀", title: "FAST DEPLOYMENT", description: "Accelerate your digital transformation with secure, rapid deployments." },
+        {
+          icon: "🎨",
+          title: "USER-FIRST DESIGN",
+          description: "We prioritize intuitive, engaging interfaces that deliver exceptional user experiences across all devices and platforms.",
+        },
+        {
+          icon: "🔄",
+          title: "END-TO-END EXPERTISE",
+          description: "From concept to launch and beyond, we manage the entire app lifecycle with a dedicated team of strategists, designers, and developers.",
+        },
+        {
+          icon: "🛡️",
+          title: "SCALABLE & SECURE SOLUTIONS",
+          description: "Our apps are built to grow with your business—designed for performance, security, and seamless integration with your systems.",
+        },
+        {
+          icon: "⚡",
+          title: "FAST DELIVERY & ONGOING SUPPORT",
+          description: "With agile development and continuous support, we ensure timely launches, regular updates, and long-term success for your mobile solution.",
+        },
       ],
     },
   },
-  "it-consulting": {
-    title: "IT Consulting",
-    description: "Strategic IT consulting services to help you make informed decisions and optimize your technology investments.",
+  "business-intelligence-and-process-automation": {
+    title: "Business Intelligence and Process Automation",
+    description: "Turn Data Into Strategy. Transform Processes Into Intelligent Automation.",
     content: [
       {
-        heading: "Why Choose Our IT Consulting Services?",
+        heading: "Unlocking the Power of Data & Efficiency",
         paragraphs: [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+          "In the modern business world, success depends on smart decisions and streamlined operations. Companies are producing more data than ever—but without the right tools to understand it, that data becomes a burden, not a benefit. At the same time, manual tasks and outdated workflows waste valuable time and increase operational costs. VTechEdge helps you overcome both challenges with a powerful combination of Business Intelligence (BI) and Process Automation services. We enable your organization to make data-driven decisions in real time and to automate repetitive, time-consuming tasks—freeing up your team for higher-impact work.",
         ],
       },
     ],
     mobileCards: {
-      heading: "Strategic IT Consulting Services",
+      heading: "What Is Business Intelligence?",
       cards: [
         {
           icon: "🎯",
-          title: "Technology Strategy",
-          description: "Develop comprehensive IT strategies aligned with business objectives.",
+          title: "What Is Business Intelligence?",
+          description:
+            "Business Intelligence (BI) is the practice of collecting, analyzing, and presenting data to help organizations make informed decisions. It involves using data to identify trends, patterns, and insights that can inform strategic business decisions.",
         },
         {
           icon: "📋",
-          title: "IT Assessment",
-          description: "Evaluate current IT infrastructure and identify improvement opportunities.",
+          title: "What Is Process Automation?",
+          description:
+            "Process automation is the use of technology to automate repetitive, time-consuming tasks and workflows. It involves using software and other tools to streamline and optimize business processes, reducing manual effort and increasing efficiency.",
         },
         {
           icon: "🚀",
-          title: "Digital Roadmap",
-          description: "Create clear pathways for technology implementation and growth.",
+          title: "Why Choose VTechEdge for Business Intelligence and Process Automation?",
+          description: "At VTechEdge, we specialize in helping businesses leverage data and automation to drive growth and efficiency.",
         },
       ],
     },
     featureSection: {
-      heading: "Expert IT Consulting Services",
+      heading: "Our Business Intelligence and Process Automation Approach",
       image: "/images/bg-2.jpg",
       features: [
         {
-          title: "Strategic Planning",
+          title: "Discovery & Strategy",
           description:
-            "Develop IT strategies that align with your business goals.Develop IT strategies that align with your business goals.Develop IT strategies that align with your business goals.",
+            "We start by understanding your business needs, challenges, and goals. Through in-depth consultation, we develop a clear strategy that aligns with your objectives and integrates seamlessly with your existing systems.",
         },
         {
-          title: "Technology Assessment",
+          title: "Design & Development",
           description:
-            "Identify gaps and opportunities in your current IT landscape.Identify gaps and opportunities in your current IT landscape.Identify gaps and opportunities in your current IT landscape.",
+            "Our team designs and develops scalable, secure, and user-friendly solutions that integrate with your existing infrastructure. We use the latest technologies and best practices to ensure your business intelligence and automation solutions are high-performing, efficient, and future-ready.",
         },
         {
-          title: "Implementation Support",
+          title: "Testing & Deployment",
           description:
-            "Get hands-on help with technology rollouts and adoption.Get hands-on help with technology rollouts and adoption.Get hands-on help with technology rollouts and adoption.",
+            "We rigorously test your solutions to ensure they perform optimally and meet your business requirements. After deployment, we provide ongoing support and optimization to keep your solutions running smoothly and efficiently.",
         },
       ],
     },
     multiPhaseSection: {
-      heading: "IT Consulting Security Considerations",
-      subheading: "Our IT consulting services prioritize security at every step, ensuring your technology investments are protected.",
+      heading: "Why Choose VTechEdge for Business Intelligence and Process Automation?",
+      subheading: "Your Trusted Partner for Data-Driven Growth",
       items: [
-        { icon: "🧑‍💼", title: "EXPERT GUIDANCE", description: "Receive expert advice on securing your IT infrastructure and data." },
-        { icon: "📊", title: "RISK ASSESSMENT", description: "Comprehensive risk assessments to identify and mitigate vulnerabilities." },
-        { icon: "🛠️", title: "IMPLEMENTATION SUPPORT", description: "Hands-on support to implement robust security measures." },
-        { icon: "🔄", title: "CONTINUOUS IMPROVEMENT", description: "Ongoing reviews and updates to keep your security posture strong." },
+        {
+          icon: "🧑‍💼",
+          title: "EXPERT GUIDANCE",
+          description: "Our team of experts combines deep industry knowledge with cutting-edge technology to deliver tailored solutions that align with your business goals.",
+        },
+        {
+          icon: "📊",
+          title: "RISK ASSESSMENT",
+          description:
+            "We provide comprehensive BI services, including data warehousing, analytics, and reporting, to help you make informed decisions and gain a competitive edge.",
+        },
+        {
+          icon: "🛠️",
+          title: "IMPLEMENTATION SUPPORT",
+          description:
+            "Our process automation solutions are designed to streamline operations, reduce costs, and improve productivity—ensuring your business runs smoothly and efficiently.",
+        },
+        {
+          icon: "🔄",
+          title: "CONTINUOUS IMPROVEMENT",
+          description:
+            "With a focus on innovation, scalability, and security, VTechEdge helps you transform your data into actionable insights and automate processes to stay ahead in today's fast-paced business environment.",
+        },
       ],
     },
   },
-  cybersecurity: {
-    title: "Cybersecurity",
-    description: "Comprehensive cybersecurity solutions to protect your business from evolving digital threats.",
+  "ai-software-development": {
+    title: "AI Software Development",
+    description: "Building Smarter Systems to Power the Future of Business",
     content: [
       {
-        heading: "Why Choose Our Cybersecurity Services?",
+        heading: "Embrace the Future with Intelligent AI Solutions",
         paragraphs: [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+          "Artificial Intelligence (AI) is no longer a futuristic concept—it's today's competitive advantage. Businesses across all industries are using AI to automate tasks, personalize customer experiences, optimize operations, and drive innovation. At VTechEdge, we help organizations design, develop, and deploy custom AI-powered software tailored to their unique needs. From machine learning models and intelligent automation to natural language processing (NLP) and predictive analytics, we build scalable solutions that think, learn, and improve—just like a human (but faster).",
         ],
       },
     ],
     mobileCards: {
-      heading: "Comprehensive Security Solutions",
+      heading: "Our AI Software Development Services",
       cards: [
         {
           icon: "🛡️",
-          title: "Threat Protection",
-          description: "Advanced security measures to protect against evolving cyber threats.",
+          title: "Machine Learning & AI Models",
+          description: "Build custom machine learning models and AI agents that can learn, adapt, and make decisions based on your data.",
         },
         {
           icon: "🔍",
-          title: "Security Monitoring",
-          description: "24/7 monitoring and detection of potential security breaches.",
+          title: "Natural Language Processing (NLP)",
+          description: "Develop intelligent chatbots and voice assistants that understand and respond to natural language queries.",
         },
         {
           icon: "📚",
-          title: "Compliance",
-          description: "Ensure adherence to industry security standards and regulations.",
+          title: "Predictive Analytics",
+          description: "Build predictive models that can forecast trends, identify risks, and optimize business operations.",
         },
       ],
     },
@@ -325,75 +368,174 @@ export const serviceData = {
       ],
     },
     multiPhaseSection: {
-      heading: "Comprehensive Cybersecurity Phases",
-      subheading: "We address security at every phase, from assessment to ongoing monitoring, to keep your business safe.",
+      heading: "Why Choose VTechEdge for AI Software Development?",
+      subheading: "Your Trusted Partner for Intelligent Automation",
       items: [
-        { icon: "🔬", title: "THREAT ANALYSIS", description: "Identify and analyze potential threats to your business." },
-        { icon: "🛡️", title: "DEFENSE STRATEGY", description: "Develop and implement a multi-layered defense strategy." },
-        { icon: "📈", title: "SECURITY MONITORING", description: "Continuous monitoring to detect and respond to incidents." },
-        { icon: "📚", title: "AWARENESS TRAINING", description: "Educate your team to recognize and avoid security risks." },
+        {
+          icon: "🔬",
+          title: "EXPERT GUIDANCE",
+          description: "Our team of experts combines deep industry knowledge with cutting-edge technology to deliver tailored solutions that align with your business goals.",
+        },
+        {
+          icon: "🛡️",
+          title: "RISK ASSESSMENT",
+          description:
+            "We provide comprehensive BI services, including data warehousing, analytics, and reporting, to help you make informed decisions and gain a competitive edge.",
+        },
+        {
+          icon: "📈",
+          title: "IMPLEMENTATION SUPPORT",
+          description:
+            "Our process automation solutions are designed to streamline operations, reduce costs, and improve productivity—ensuring your business runs smoothly and efficiently.",
+        },
+        {
+          icon: "📚",
+          title: "CONTINUOUS IMPROVEMENT",
+          description:
+            "With a focus on innovation, scalability, and security, VTechEdge helps you transform your data into actionable insights and automate processes to stay ahead in today's fast-paced business environment.",
+        },
       ],
     },
   },
-  "data-analytics": {
-    title: "Data Analytics",
-    description: "Advanced data analytics services to help you make data-driven decisions and gain competitive advantages.",
+
+  "graphic-design": {
+    title: "Graphic Design",
+    description: "Creating Visual Identities That Speak Louder Than Words",
     content: [
       {
-        heading: "Why Choose Our Data Analytics Services?",
+        heading: "Design That Connects, Communicates & Converts",
         paragraphs: [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+          "Great design isn't just about looking good—it's about making an impression, telling your story, and guiding your audience to action. At VTechEdge, we offer full-spectrum graphic design services that blend creativity, strategy, and functionality. Whether you're building a new brand, refreshing your visual identity, or launching a campaign, our team turns ideas into stunning visuals that elevate your brand and engage your audience.",
         ],
       },
     ],
     mobileCards: {
-      heading: "Advanced Analytics Solutions",
+      heading: "Our Graphic Design Services",
       cards: [
         {
           icon: "📊",
-          title: "Business Intelligence",
-          description: "Transform raw data into actionable business insights.",
+          title: "Brand Identity & Logo Design",
+          description:
+            "Your logo is more than a symbol—it’s your brand’s first impression. We craft logos and brand assets that are original, timeless, and aligned with your business vision.",
         },
         {
           icon: "🔮",
-          title: "Predictive Analytics",
-          description: "Forecast trends and make data-driven predictions.",
+          title: "Marketing & Advertising Design",
+          description: "From eye-catching social media graphics to high-converting ad creatives, we design visual content that stops the scroll and drives results.",
         },
         {
           icon: "📈",
-          title: "Performance Analytics",
-          description: "Track and optimize business performance metrics.",
+          title: "Corporate & Business Design",
+          description: "Professional design that supports your communication and enhances your brand image across all corporate touchpoints.",
         },
       ],
     },
     featureSection: {
-      heading: "Unlock the Power of Data",
+      heading: "Our Graphic Design Approach",
       image: "/images/bg-2.jpg",
       features: [
         {
-          title: "Data Collection",
-          description: "Gather and organize data from multiple sources.Gather and organize data from multiple sources.Gather and organize data from multiple sources.",
+          title: "Discovery & Strategy",
+          description:
+            "We begin by understanding your brand, audience, and goals. Through in-depth research and analysis, we develop a clear design strategy that aligns with your business objectives.",
         },
         {
-          title: "Insight Generation",
+          title: "Design & Development",
           description:
-            "Analyze data to uncover actionable business insights.Analyze data to uncover actionable business insights.Analyze data to uncover actionable business insights.",
+            "Our team creates visually stunning designs that are not only aesthetically pleasing but also strategically aligned with your brand identity and communication goals.",
         },
         {
-          title: "Visualization & Reporting",
+          title: "Testing & Deployment",
           description:
-            "Present data in clear, compelling dashboards and reports.Present data in clear, compelling dashboards and reports.Present data in clear, compelling dashboards and reports.",
+            "We rigorously test your designs for performance, usability, and brand consistency. After launch, we provide ongoing support and updates to ensure your visual identity remains fresh and impactful.",
         },
       ],
     },
     multiPhaseSection: {
-      heading: "Data Analytics Security Phases",
-      subheading: "Protecting your data is our top priority. We secure your analytics pipeline from end to end.",
+      heading: "Why Choose VTechEdge for Graphic Design?",
+      subheading: "Your Trusted Partner for Visual Storytelling",
       items: [
-        { icon: "📊", title: "DATA INTEGRITY", description: "Ensure the accuracy and reliability of your data throughout its lifecycle." },
-        { icon: "🔒", title: "ACCESS CONTROL", description: "Strict access controls to protect sensitive information." },
-        { icon: "🔍", title: "AUDITABILITY", description: "Comprehensive audit trails for transparency and compliance." },
-        { icon: "⚡", title: "PERFORMANCE & SECURITY", description: "Balance high performance with robust security measures." },
+        {
+          icon: "🎨",
+          title: "USER-FIRST DESIGN",
+          description: "We prioritize intuitive, engaging interfaces that deliver exceptional user experiences across all devices and platforms.",
+        },
+        {
+          icon: "�",
+          title: "END-TO-END EXPERTISE",
+          description: "From concept to launch and beyond, we manage the entire design lifecycle with a dedicated team of strategists, designers, and developers.",
+        },
+        {
+          icon: "�️",
+          title: "SCALABLE & SECURE SOLUTIONS",
+          description: "Our designs are built to grow with your business—designed for performance, security, and seamless integration with your systems.",
+        },
+        {
+          icon: "⚡",
+          title: "FAST DELIVERY & ONGOING SUPPORT",
+          description: "With agile development and continuous support, we ensure timely launches, regular updates, and long-term success for your visual identity.",
+        },
+      ],
+    },
+  },
+  "digital-marketing": {
+    title: "Digital Marketing",
+    description: "Driving Growth with Strategic Digital Marketing Solutions",
+    content: [
+      {
+        heading: "Why Choose Our Digital Marketing Services?",
+        paragraphs: [
+          "In today's digital landscape, having a strong online presence is crucial for business success. Our comprehensive digital marketing services combine data-driven strategies with creative excellence to help your brand stand out, engage your audience, and drive measurable results. From SEO optimization to social media management, we create tailored campaigns that deliver real business impact.",
+        ],
+      },
+    ],
+    mobileCards: {
+      heading: "Comprehensive Digital Marketing Solutions",
+      cards: [
+        {
+          icon: "🔍",
+          title: "Search Engine Optimization (SEO)",
+          description: "Improve your website's visibility and rank higher in search results.",
+        },
+        {
+          icon: "📱",
+          title: "Social Media Marketing",
+          description: "Build brand awareness and engage with your audience across platforms.",
+        },
+        {
+          icon: "📧",
+          title: "Email Marketing",
+          description: "Drive conversions with targeted email campaigns and automation.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "Our Digital Marketing Process",
+      image: "/images/bg-2.jpg",
+      features: [
+        {
+          title: "Strategy & Research",
+          description:
+            "We analyze your market, competitors, and target audience to develop a comprehensive digital marketing strategy that aligns with your business goals and budget.",
+        },
+        {
+          title: "Campaign Execution",
+          description: "Our team implements multi-channel campaigns across SEO, PPC, social media, and content marketing, ensuring consistent messaging and optimal performance.",
+        },
+        {
+          title: "Analysis & Optimization",
+          description: "We continuously monitor campaign performance, analyze data, and optimize strategies to maximize ROI and achieve sustainable growth for your business.",
+        },
+      ],
+    },
+    multiPhaseSection: {
+      heading: "Why Choose VTechEdge for Digital Marketing?",
+      subheading: "Your Partner for Digital Growth and Success",
+      items: [
+        { icon: "📊", title: "DATA-DRIVEN APPROACH", description: "Make informed decisions with comprehensive analytics and performance tracking across all campaigns." },
+        { icon: "🎯", title: "TARGETED STRATEGIES", description: "Reach your ideal customers with precision-targeted campaigns and personalized messaging." },
+        { icon: "📈", title: "MEASURABLE RESULTS", description: "Track real-time performance and ROI with detailed reporting and transparent analytics." },
+        { icon: "🚀", title: "SCALABLE GROWTH", description: "Scale your marketing efforts efficiently as your business grows with flexible, adaptive strategies." },
       ],
     },
   },
