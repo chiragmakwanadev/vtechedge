@@ -8,6 +8,7 @@ body {
   padding: 0;
   user-select: none;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -17,37 +18,4 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-}
-
-/* Marquee Animation Styles */
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee-content {
-  display: flex;
-  animation: marquee 30s linear infinite;
-  width: max-content;
-}
-
-.marquee-content:hover {
-  animation-play-state: paused;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .marquee-content {
-    animation-duration: 20s;
-  }
 }

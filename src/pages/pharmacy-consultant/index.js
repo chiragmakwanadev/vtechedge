@@ -42,7 +42,7 @@ const Index = () => {
         {/* Right Side */}
         <div className="flex-1 flex justify-center relative h-[300px] xl:h-[700px] w-full">
           <Image
-            src="/images/bg-2.jpg"
+            src="/images/pharma.jpg"
             alt="RPA Illustration"
             fill
             className="object-cover rounded-[20px]"
@@ -125,7 +125,7 @@ const Index = () => {
           </div>
           <div className="flex-1 flex justify-start relative h-[300px] xl:h-[500px] w-full">
             <Image
-              src="/images/bg-1.jpg"
+              src="/images/deve.jpg"
               alt="Finance Automation"
               fill
               className="object-cover rounded-[20px]"
@@ -136,7 +136,7 @@ const Index = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between gap-8">
           <div className="flex-1 flex justify-start order-2 xl:order-1 relative h-[300px] xl:h-[500px] w-full">
             <Image
-              src="/images/bg-2.jpg"
+              src="/images/social.jpg"
               alt="HR Automation"
               fill
               className="object-cover rounded-[20px]"

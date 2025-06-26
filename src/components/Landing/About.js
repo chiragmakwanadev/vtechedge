@@ -9,7 +9,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center gap-[50px]">
         <div className="relative w-full md:w-[60%] h-[300px] md:h-[500px]">
           <Image
-            src="/images/bg-2.jpg"
+            src="/images/image1.jpg"
             alt="about"
             fill
             className="rounded-[30px] object-cover"

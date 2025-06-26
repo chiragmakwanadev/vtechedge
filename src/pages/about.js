@@ -83,19 +83,19 @@ const About = () => {
   const partnershipContent = [
     {
       title: "Fixed Price",
-      image: "/images/bg-1.jpg",
+      image: "/images/partner.jpg",
       content:
         "Once the project requirements are clearly defined, we provide a fixed scope along with a transparent cost estimate. Upon mutual agreement, our team takes full responsibility for delivering the solution on time and in full alignment with the approved specifications.",
     },
     {
       title: "Hire a Dedicated Resource",
-      image: "/images/bg-2.jpg",
+      image: "/images/res.jpg",
       content:
         "For clients seeking focused, long-term support, we offer skilled developers and engineers who work exclusively on your project. Whether remote or onsite in Canada, you'll have full control over the workflow, priorities, and outcomes — with the flexibility to scale as needed.",
     },
     {
       title: "Onsite / On-Premises Support",
-      image: "/images/bg-3.jpg",
+      image: "/images/support.jpg",
       content:
         "Need our team to work directly with your in-house staff or on-site at your business location? VTechEdge provides seamless on-premises collaboration to ensure smooth integration with your processes, faster communication, and aligned execution.",
     },
