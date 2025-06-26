@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Clamp from "@/utils/Clamp";
 
 const About = () => {
   return (
-    <div className="px-[100px] py-[50px] flex flex-col gap-[50px]">
-      <div className="flex items-center gap-[50px]">
-        <div className="relative w-[60%] h-[500px]">
+    <div className="padding-x py-[50px] flex flex-col gap-[50px]">
+      <div className="flex flex-col md:flex-row items-center gap-[50px]">
+        <div className="relative w-full md:w-[60%] h-[300px] md:h-[500px]">
           <Image
             src="/images/bg-2.jpg"
             alt="about"
@@ -14,7 +15,7 @@ const About = () => {
             className="rounded-[30px] object-cover"
           />
         </div>
-        <div className="w-[40%] flex flex-col gap-[20px]">
+        <div className="w-full md:w-[40%] flex flex-col gap-[20px]">
           <h2 className="text-[18px] text-[#778da9]">
             Revolutionizing Businesses with RPA & Custom Tech Solutions
           </h2>
@@ -35,12 +36,15 @@ const About = () => {
           </button>
         </div>
       </div>
-      <div className="bg-[#ececec] p-[50px] text-center rounded-[30px] flex flex-col items-center gap-[20px]">
-        <h1 className="text-[30px] font-medium text-[#0d1b2a]">
+      <div className="bg-[#ececec] p-[20px] md:p-[50px] text-left md:text-center rounded-[30px] flex flex-col items-start md:items-center gap-[20px]">
+        <h1
+          className="font-medium text-[#0d1b2a]"
+          style={{ fontSize: `${Clamp(1.4, 2)}` }}
+        >
           We structure and optimize your operations to unlock the full power of
           automation.
         </h1>
-        <p className="text-[18px] text-[#0d1b2a] w-[80%] text-center">
+        <p className="text-[18px] text-[#0d1b2a] w-full md:w-[80%] text-left md:text-center">
           We streamline and enhance your business processes through tailored
           automation solutions, improving efficiency, reducing manual tasks, and
           enabling scalable growth. Our approach ensures your operations are

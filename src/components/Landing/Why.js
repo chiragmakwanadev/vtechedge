@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Why = () => {
   return (
-    <div className="px-[100px] py-[50px] flex flex-col gap-[50px]">
-      <div className="flex items-center gap-[50px]">
-        <div className="relative w-[50%] h-[800px]">
+    <div className="padding-x py-[50px] flex flex-col gap-[50px]">
+      <div className="flex items-center flex-col xl:flex-row gap-[50px]">
+        <div className="relative w-full xl:w-[50%] h-[300px] xl:h-[800px]">
           <Image
             src="/images/bg-2.jpg"
             alt="about"
@@ -13,11 +13,11 @@ const Why = () => {
             className="object-cover rounded-[30px]"
           />
         </div>
-        <div className="w-[50%] flex flex-col gap-[20px]">
+        <div className="w-full xl:w-[50%] flex flex-col gap-[20px]">
           <h2 className="text-[18px] text-[#778da9]">
             Finance & Invoice Automation for Pharmacies and Enterprises.
           </h2>
-          <h1 className="text-[30px] font-medium text-[#0d1b2a]">
+          <h1 className="text-[24px] md:text-[30px] font-medium text-[#0d1b2a]">
             Streamline Accounting. Eliminate Errors. Scale with Confidence.
           </h1>
           <ul className="flex flex-col gap-[20px]">

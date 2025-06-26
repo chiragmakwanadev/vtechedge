@@ -30,12 +30,12 @@ const Service = () => {
   ];
 
   return (
-    <div className="py-[100px] px-[150px] ">
-      <div className="text-center mb-[50px]">
+    <div className="py-[100px] padding-x">
+      <div className="text-left md:text-center mb-[50px]">
         <h2 className="text-[24px] font-bold mb-4">
           Delivering Measurable Results with Every Solution
         </h2>
-        <p className="text-[16px] text-gray-600 w-[80%] mx-auto">
+        <p className="text-[16px] text-gray-600 w-full md:w-[80%] mx-auto">
           Our technology-driven approach is built to generate real outcomes —
           not just promises. With VTechEdge, you’ll experience transformative
           benefits that fuel sustainable growth and compliance.
@@ -43,11 +43,11 @@ const Service = () => {
         <h2 className="text-[24px] font-bold my-7">What You Can Expect:</h2>
       </div>
 
-      <div className="grid grid-cols-2 gap-8">
+      <div className="flex flex-row flex-wrap gap-[20px] justify-around">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white p-8 rounded-[20px] shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full"
+            className="bg-white p-8 rounded-[20px] shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full w-full xl:w-[49%]"
           >
             <div className="w-[60px] h-[60px] bg-[#1b263b] rounded-full flex items-center justify-center mb-6 text-[24px]">
               {service.icon}

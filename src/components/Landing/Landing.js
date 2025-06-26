@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import Image from "next/image";
 import gsap from "gsap";
+import Clamp from "@/utils/Clamp";
 
 const Landing = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -98,7 +99,7 @@ const Landing = () => {
   }, [currentSlide, nextSlide]);
 
   return (
-    <div className={`relative w-full h-[98vh] overflow-hidden `}>
+    <div className={`relative w-full h-[80vh] xl:h-[98vh] overflow-hidden `}>
       {/* Slides Container */}
       <div className="relative w-full h-full">
         {images.map((image, index) => (
@@ -112,7 +113,7 @@ const Landing = () => {
               src={image}
               alt={`Slide ${index + 1}`}
               fill
-              className="object-cover brightness-[0.3] rounded-b-[50px]"
+              className="object-cover brightness-[0.3] rounded-b-[20px] md:rounded-b-[50px]"
               priority={index === 0}
             />
           </div>
@@ -125,10 +126,20 @@ const Landing = () => {
           key={index}
           ref={(el) => (textRefs.current[index] = el)}
           className="absolute left-[100px] top-1/2 -translate-y-1/2 text-left text-[#e0e1dd] z-10 w-full max-w-5xl"
-          style={{ opacity: index === 0 ? 1 : 0 }}
+          style={{ opacity: index === 0 ? 1 : 0, left: `${Clamp(0.5, 6.25)}` }}
         >
-          <h3 className="text-[30px] font-light mb-2">{content.title}</h3>
-          <h1 className="text-[40px] mb-4">{content.subTitle}</h1>
+          <h3
+            className="font-light mb-2"
+            style={{ fontSize: `${Clamp(1, 2)}` }}
+          >
+            {content.title}
+          </h3>
+          <h1
+            className="mb-4 break-words"
+            style={{ fontSize: `${Clamp(1.4, 2.4)}` }}
+          >
+            {content.subTitle}
+          </h1>
           <p className="text-[16px] max-w-xl w-[80%]">{content.description}</p>
           <button className="bg-[#1b263b] hover:bg-[#415a77] transition-colors duration-300 text-white px-[20px] py-[10px] rounded-[8px] text-[18px] mt-[30px]">
             {content.cta}
