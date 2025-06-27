@@ -29,7 +29,9 @@ const Landing = () => {
     },
   ];
 
-  const goToSlide = useCallback((index) => {
+  const goToSlide = useCallback((index) => {0.
+
+    
     if (index < 0) index = totalSlides - 1;
     if (index >= totalSlides) index = 0;
     setCurrentSlide(index);
