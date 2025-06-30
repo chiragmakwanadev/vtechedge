@@ -86,7 +86,7 @@ const ServicePage = () => {
           <div className="flex-1">
             {service.featureSection.features.map((feature, idx) => (
               <div key={idx} className="mb-6 xl:mb-8 last:mb-0">
-                <h3 className="text-lg xl:text-xl font-bold mb-2 text-[#1b263b]">
+                <h3 className="text-lg xl:text-xl font-bold mb-2 text-[#274c77]">
                   {feature.title}
                 </h3>
                 <p className="text-[14px] xl:text-base text-gray-600">
@@ -100,7 +100,7 @@ const ServicePage = () => {
 
       {/* Multi Phase Section: 2x2 Grid with Heading and Subheading */}
       <div className="py-[50px] xl:py-[100px] padding-x bg-[#ececec]">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-[#1b263b]">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-[#274c77]">
           {service.multiPhaseSection.heading}
         </h2>
         <p className="text-[14px] xl:text-lg text-center mb-8 xl:mb-12 text-[#6c7a89] max-w-4xl mx-auto">
@@ -113,7 +113,7 @@ const ServicePage = () => {
                 {item.icon}
               </div>
               <div>
-                <h3 className="text-lg xl:text-xl font-bold mb-2 text-[#1b263b]">
+                <h3 className="text-lg xl:text-xl font-bold mb-2 text-[#274c77]">
                   {item.title}
                 </h3>
                 <p className="text-[14px] xl:text-base text-[#6c7a89]">
@@ -128,8 +128,8 @@ const ServicePage = () => {
       {/* Centered Static Button at the End */}
       <div className="flex justify-center my-12 xl:my-24">
         <button
-          className="bg-[#1b263b] text-white text-[14px] xl:text-lg font-bold px-6 xl:px-10 py-3 xl:py-4 rounded-full shadow-lg transition-all duration-300
-          hover:bg-gradient-to-r hover:from-[#415a77] hover:to-[#1b263b] hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(65,90,119,0.25)]
+          className="bg-[#274c77] text-white text-[14px] xl:text-lg font-bold px-6 xl:px-10 py-3 xl:py-4 rounded-full shadow-lg transition-all duration-300
+          hover:bg-gradient-to-r hover:from-[#415a77] hover:to-[#274c77] hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(65,90,119,0.25)]
           focus:outline-none focus:ring-4 focus:ring-[#415a77]/50 animate-bounce"
         >
           SETUP A FREE MEETING

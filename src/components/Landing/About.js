@@ -31,7 +31,7 @@ const About = () => {
             From healthcare to enterprise IT, we build scalable, compliant, and
             future-ready solutions that drive productivity and innovation.
           </p>
-          <button className="bg-[#1b263b] hover:bg-[#415a77] transition-colors duration-300 text-white px-[20px] py-[10px] rounded-[8px] text-[18px]">
+          <button className="bg-[#274c77] hover:bg-[#415a77] transition-colors duration-300 text-white px-[20px] py-[10px] rounded-[8px] text-[18px]">
             Explore Our Solutions
           </button>
         </div>
@@ -53,7 +53,7 @@ const About = () => {
         </p>
         <Link
           href="/contact"
-          className="bg-[#1b263b] hover:bg-[#415a77] transition-colors duration-300 text-white px-[20px] py-[10px] rounded-[8px] text-[18px]"
+          className="bg-[#274c77] hover:bg-[#415a77] transition-colors duration-300 text-white px-[20px] py-[10px] rounded-[8px] text-[18px]"
         >
           Contact Us
         </Link>

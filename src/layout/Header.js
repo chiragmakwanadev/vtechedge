@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import gsap from "gsap";
 import { redHatText } from "@/pages";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -16,9 +15,6 @@ const Header = () => {
   const [showMobileServicesDropdown, setShowMobileServicesDropdown] =
     useState(false);
   const headerRef = useRef(null);
-  const dropdownRef = useRef(null);
-  const mobileMenuRef = useRef(null);
-  const mobileDropdownRef = useRef(null);
 
   const serviceItems = [
     {
@@ -84,79 +80,12 @@ const Header = () => {
     };
   }, [isMobileMenuOpen]);
 
-  const handleMouseEnter = (e) => {
-    const underline = e.currentTarget.querySelector(".nav-underline");
-    const tl = gsap.timeline();
-    tl.to(underline, {
-      width: "100%",
-      duration: 0.4,
-      ease: "power2.out",
-      onStart: () => {
-        gsap.set(underline, { left: 0 });
-      },
-    });
-  };
-
-  const handleMouseLeave = (e) => {
-    const underline = e.currentTarget.querySelector(".nav-underline");
-    const tl = gsap.timeline();
-    tl.to(underline, {
-      width: 0,
-      duration: 0.4,
-      ease: "power2.in",
-      onComplete: () => {
-        gsap.set(underline, { left: "100%" });
-      },
-    });
-  };
-
   const toggleServicesDropdown = () => {
     setShowServicesDropdown(!showServicesDropdown);
-    if (dropdownRef.current) {
-      if (!showServicesDropdown) {
-        // Opening animation
-        gsap.fromTo(
-          dropdownRef.current,
-          {
-            opacity: 0,
-            y: -10,
-            display: "block",
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.3,
-            ease: "power2.out",
-          }
-        );
-      } else {
-        // Closing animation
-        gsap.to(dropdownRef.current, {
-          opacity: 0,
-          y: -10,
-          duration: 0.3,
-          ease: "power2.in",
-          onComplete: () => {
-            gsap.set(dropdownRef.current, { display: "none" });
-          },
-        });
-      }
-    }
   };
 
   const closeDropdown = () => {
-    if (showServicesDropdown) {
-      gsap.to(dropdownRef.current, {
-        opacity: 0,
-        y: -10,
-        duration: 0.3,
-        ease: "power2.in",
-        onComplete: () => {
-          setShowServicesDropdown(false);
-          gsap.set(dropdownRef.current, { display: "none" });
-        },
-      });
-    }
+    setShowServicesDropdown(false);
   };
 
   const handleMenuItemClick = () => {
@@ -165,85 +94,14 @@ const Header = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    if (mobileMenuRef.current) {
-      if (!isMobileMenuOpen) {
-        // Opening animation
-        gsap.fromTo(
-          mobileMenuRef.current,
-          {
-            opacity: 0,
-            x: "100%",
-            display: "flex",
-          },
-          {
-            opacity: 1,
-            x: 0,
-            duration: 0.4,
-            ease: "power2.out",
-          }
-        );
-      } else {
-        // Closing animation
-        gsap.to(mobileMenuRef.current, {
-          opacity: 0,
-          x: "100%",
-          duration: 0.4,
-          ease: "power2.in",
-          onComplete: () => {
-            gsap.set(mobileMenuRef.current, { display: "none" });
-          },
-        });
-      }
-    }
   };
 
   const toggleMobileServicesDropdown = () => {
     setShowMobileServicesDropdown(!showMobileServicesDropdown);
-    if (mobileDropdownRef.current) {
-      if (!showMobileServicesDropdown) {
-        // Opening animation
-        gsap.fromTo(
-          mobileDropdownRef.current,
-          {
-            opacity: 0,
-            height: 0,
-            display: "block",
-          },
-          {
-            opacity: 1,
-            height: "auto",
-            duration: 0.3,
-            ease: "power2.out",
-          }
-        );
-      } else {
-        // Closing animation
-        gsap.to(mobileDropdownRef.current, {
-          opacity: 0,
-          height: 0,
-          duration: 0.3,
-          ease: "power2.in",
-          onComplete: () => {
-            gsap.set(mobileDropdownRef.current, { display: "none" });
-          },
-        });
-      }
-    }
   };
 
   const closeMobileMenu = () => {
-    if (isMobileMenuOpen) {
-      gsap.to(mobileMenuRef.current, {
-        opacity: 0,
-        x: "100%",
-        duration: 0.4,
-        ease: "power2.in",
-        onComplete: () => {
-          setIsMobileMenuOpen(false);
-          gsap.set(mobileMenuRef.current, { display: "none" });
-        },
-      });
-    }
+    setIsMobileMenuOpen(false);
   };
 
   const handleMobileMenuItemClick = () => {
@@ -286,16 +144,7 @@ const Header = () => {
       {/* Desktop Navigation */}
       <ul className="hidden lg:flex items-center gap-[40px] text-[16px]">
         {navItems.map((item) => (
-          <li
-            key={item.path}
-            className="relative cursor-pointer group"
-            onMouseEnter={(e) => {
-              handleMouseEnter(e);
-            }}
-            onMouseLeave={(e) => {
-              handleMouseLeave(e);
-            }}
-          >
+          <li key={item.path} className="relative cursor-pointer group">
             <div className="flex items-center gap-1">
               <Link
                 href={item.path}
@@ -323,15 +172,14 @@ const Header = () => {
                 </button>
               )}
             </div>
-            <div
-              className="nav-underline absolute bottom-[-4px] left-0 h-[2px] bg-[#e0e1dd]"
-              style={{ width: 0 }}
-            />
+            <div className="absolute bottom-[-4px] left-0 h-[2px] bg-[#e0e1dd] w-0 group-hover:w-full transition-all duration-300 ease-out" />
             {item.hasDropdown && (
               <div
-                ref={dropdownRef}
-                className="absolute top-full left-0 mt-2 w-64 bg-[#0d1b2a] rounded-md shadow-lg py-2 z-50"
-                style={{ display: showServicesDropdown ? "block" : "none" }}
+                className={`absolute top-full left-0 mt-2 w-64 bg-[#0d1b2a] rounded-md shadow-lg py-2 z-50 transition-all duration-300 ${
+                  showServicesDropdown
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-2 pointer-events-none"
+                }`}
               >
                 {serviceItems.map((service) => (
                   <Link
@@ -377,9 +225,11 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        ref={mobileMenuRef}
-        className="lg:hidden fixed top-0 right-0 w-full h-screen bg-[#0d1b2a]/95 backdrop-blur-[20px] z-50 flex flex-col"
-        style={{ display: "none" }}
+        className={`lg:hidden fixed top-0 right-0 w-full h-screen bg-[#0d1b2a]/95 backdrop-blur-[20px] z-50 flex flex-col transition-all duration-400 ${
+          isMobileMenuOpen
+            ? "opacity-100 translate-x-0"
+            : "opacity-0 translate-x-full pointer-events-none"
+        }`}
       >
         {/* Mobile Menu Header */}
         <div className="flex items-center justify-between p-6 border-b border-[#415a77]/30">
@@ -448,9 +298,11 @@ const Header = () => {
                       </button>
                     </div>
                     <div
-                      ref={mobileDropdownRef}
-                      className="mt-4 pl-4 space-y-2"
-                      style={{ display: "none" }}
+                      className={`mt-4 pl-4 space-y-2 transition-all duration-300 overflow-hidden ${
+                        showMobileServicesDropdown
+                          ? "max-h-96 opacity-100"
+                          : "max-h-0 opacity-0"
+                      }`}
                     >
                       {serviceItems.map((service) => (
                         <Link

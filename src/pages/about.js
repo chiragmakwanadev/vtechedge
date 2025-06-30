@@ -150,7 +150,7 @@ const About = () => {
             {statsData.map((stat, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center gap-2 bg-[#1b263b] rounded-[20px] p-5 text-white w-full sm:w-1/2"
+                className="flex flex-col items-center gap-2 bg-[#274c77] rounded-[20px] p-5 text-white w-full sm:w-1/2"
               >
                 <h1 className="text-[32px] xl:text-[48px] font-bold">
                   {stat.number}
@@ -178,7 +178,7 @@ const About = () => {
               key={index}
               className="bg-white p-6 xl:p-8 rounded-[20px] shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full"
             >
-              <div className="w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] bg-[#1b263b] rounded-full flex items-center justify-center mb-4 xl:mb-6">
+              <div className="w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] bg-[#274c77] rounded-full flex items-center justify-center mb-4 xl:mb-6">
                 {service.icon}
               </div>
               <h3 className="text-[20px] xl:text-[24px] font-bold mb-3 xl:mb-4">
@@ -187,10 +187,10 @@ const About = () => {
               <p className="text-[14px] xl:text-[16px] text-gray-600 mb-4 xl:mb-6 flex-1">
                 {service.description}
               </p>
-              <button className="mt-auto inline-flex items-center gap-2 text-[#1b263b] font-semibold hover:underline group">
+              <button className="mt-auto inline-flex items-center gap-2 text-[#274c77] font-semibold hover:underline group">
                 Learn more
                 <svg
-                  className="w-4 h-4 xl:w-5 xl:h-5 text-[#1b263b] group-hover:translate-x-1 transition-transform duration-200"
+                  className="w-4 h-4 xl:w-5 xl:h-5 text-[#274c77] group-hover:translate-x-1 transition-transform duration-200"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -253,7 +253,7 @@ const About = () => {
               key={index}
               className="bg-white p-6 xl:p-8 rounded-[20px] shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] bg-[#1b263b] rounded-full flex items-center justify-center mb-4 xl:mb-6 mx-auto">
+              <div className="w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] bg-[#274c77] rounded-full flex items-center justify-center mb-4 xl:mb-6 mx-auto">
                 {item.icon}
               </div>
               <h3 className="text-[20px] xl:text-[24px] font-bold mb-3 xl:mb-4">
@@ -302,7 +302,7 @@ const About = () => {
             <div className="flex items-center justify-between">
               <button
                 onClick={handlePrevSlide}
-                className="w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] rounded-full bg-[#1b263b] text-white flex items-center justify-center hover:bg-[#2a3f5f] transition-colors"
+                className="w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] rounded-full bg-[#274c77] text-white flex items-center justify-center hover:bg-[#2a3f5f] transition-colors"
               >
                 <FaArrowLeft size={16} className="xl:w-5 xl:h-5" />
               </button>
@@ -311,14 +311,14 @@ const About = () => {
                   <div
                     key={index}
                     className={`w-2 h-2 xl:w-3 xl:h-3 rounded-full ${
-                      currentSlide === index ? "bg-[#1b263b]" : "bg-gray-300"
+                      currentSlide === index ? "bg-[#274c77]" : "bg-gray-300"
                     }`}
                   />
                 ))}
               </div>
               <button
                 onClick={handleNextSlide}
-                className="w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] rounded-full bg-[#1b263b] text-white flex items-center justify-center hover:bg-[#2a3f5f] transition-colors"
+                className="w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] rounded-full bg-[#274c77] text-white flex items-center justify-center hover:bg-[#2a3f5f] transition-colors"
               >
                 <FaArrowRight size={16} className="xl:w-5 xl:h-5" />
               </button>

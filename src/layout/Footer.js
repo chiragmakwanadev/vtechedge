@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#1b263b] text-white flex items-start justify-start xl:justify-around padding-x py-[100px] gap-[100px] flex-wrap xl:flex-nowrap">
+    <div className="w-full bg-[#274c77] text-white flex items-start justify-start xl:justify-around padding-x py-[100px] gap-[100px] flex-wrap xl:flex-nowrap">
       <div className="flex flex-col justify-between h-full gap-[20px]">
         <Link href="/" className="flex items-end relative">
           <div className="relative w-[70px] h-[70px]">
@@ -33,7 +33,7 @@ const Footer = () => {
         overflow-hidden pl-[15px] pr-[1px] py-[1px] w-[300px] h-[40px] flex items-center justify-between"
         >
           <input type="text" placeholder="Enter your email" />
-          <button className="bg-[#1b263b] hover:bg-[#415a77] transition-colors duration-300 h-full rounded-[30px] py-2 px-4 flex items-center justify-center">
+          <button className="bg-[#274c77] hover:bg-[#415a77] transition-colors duration-300 h-full rounded-[30px] py-2 px-4 flex items-center justify-center">
             Subscribe
           </button>
         </div>
